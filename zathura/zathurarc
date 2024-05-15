@@ -1,0 +1,5 @@
+# allow clipboard
+set selection-clipboard clipboard
+
+# invert colors
+set recolor true
