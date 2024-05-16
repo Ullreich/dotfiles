@@ -93,13 +93,14 @@
 "custom/emoji_time": {
     "format": "{}",
     "exec": "python3 ~/.config/waybar/emoji_time.py",
-    "interavl": 60
+    "restart-interval": 60,
 },
 "clock": {
     // "timezone": "America/New_York",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "{:%H:%M}",
+    "format": "{:%H:%M:%S}",
     "format-alt": "{:%H:%M %Y-%m-%d}",
+    "interval": 1
 //"format-alt": "{:%Y-%m-%dv}"
 },
 "cpu": {
