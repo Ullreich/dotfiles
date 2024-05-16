@@ -37,6 +37,7 @@
     "custom/separator",
     "battery",
     "custom/separator",
+    "custom/emoji_time",
     "clock",
 ],
 "custom/separator": {
@@ -89,11 +90,16 @@
     "tooltip-format": "MPD (connected)",
     "tooltip-format-disconnected": "MPD (disconnected)"
 },
+"custom/emoji_time": {
+    "format": "{}",
+    "exec": "python3 ~/.config/waybar/emoji_time.py",
+    "interavl": 60
+},
 "clock": {
     // "timezone": "America/New_York",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-     "format": "{:%H:%M}",
-"format-alt": "{:%H:%M %Y-%m-%d}"
+    "format": "{:%H:%M}",
+    "format-alt": "{:%H:%M %Y-%m-%d}",
 //"format-alt": "{:%Y-%m-%dv}"
 },
 "cpu": {
@@ -115,6 +121,9 @@
     // "device": "acpi_video1",
     "format": "{icon} {percent}%",
     "format-icons": ["", "", "", "", "", "", "", "", ""]
+},
+"sway/language": {
+  "format": "  {short}",
 },
 "battery": {
     "states": {

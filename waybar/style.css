@@ -58,13 +58,17 @@ button:hover {
   color:#fcdbd9;
   border-top: 2px solid #fcdbd9;
 }
-
+#custom-emoji_time {
+  font-size: 20px;
+  padding-left: 4px;
+  padding-right: 0;
+}
 #custom-separator {
   font-size: 20px;
   color:#fcdbd9;
 }
 #clock {
-   padding-left: 4px;
+   padding-left: 0;
   padding-right: 10px;
 }
 #cpu {
@@ -84,7 +88,7 @@ button:hover {
   padding-right: 4px;
 }
 #pulseaudio {
-  padding-left: 4px;
+  padding-left: 4px; 
   padding-right: 4px;
 }
 #scratchpad,
