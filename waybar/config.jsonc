@@ -94,14 +94,14 @@
     "format": "{}",
     "exec": "python3 ~/.config/waybar/emoji_time.py",
     "restart-interval": 60,
+    "tooltip": false
 },
 "clock": {
     // "timezone": "America/New_York",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "{:%H:%M:%S}",
-    "format-alt": "{:%H:%M %Y-%m-%d}",
-    "interval": 1
-//"format-alt": "{:%Y-%m-%dv}"
+    "format": "{:%H:%M}",
+    "format-alt": "{:%H:%M:%S %Y-%m-%d}",
+    "interval": 1,
 },
 "cpu": {
     "format": "  {usage}%",
@@ -136,7 +136,7 @@
     "format-full": "{icon}  {capacity}%",
     "format-charging": "  {capacity}%",
     "format-plugged": "  {capacity}%",
-    "format-alt": "{time} {icon}",
+    "format-alt": "{icon}  {time}",
     // "format-good": "", // An empty format will hide the module
     // "format-full": "",
     "format-icons": ["", "", "", "", ""]
