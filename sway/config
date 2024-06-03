@@ -26,8 +26,8 @@ font pango:MesloLGS NF 14
 set $lock 'swaylock -f  --image=~/Pictures/krater.png' 
 
 # wallpaper
-# output "*" bg ~/Pictures/milky_way.jpg fill
-output "*" bg #6d7b8b solid_color
+output "*" bg ~/Pictures/homemade_background.png fill
+# output "*" bg #6d7b8b solid_color
 
 # screenshot stuff
 
@@ -105,12 +105,13 @@ input type:keyboard {
    xkb_options grp:shifts_toggle
 }
 
-# input tap_button_map lrm
-
-input type:touchpad {
-    tap enabled
-    tap_button_map lrm
-}
+# disabling this makes it so that vim mousepad isn't fucky
+# I hate middle click
+# maybe hack together libinput to disable it?
+# input type:touchpad {
+#     tap enabled
+#     tap_button_map lrm
+# }
 
 # change focus
 # bindsym Mod4+$left focus left
@@ -303,3 +304,7 @@ gaps inner 5
 exec --no-startup-id /usr/bin/ulauncher
 exec systemctl --user import-environment
 
+# custom scripts
+
+# restore
+bindsym Mod4+u exec ~/.config/sway/scripts/socials.sh
