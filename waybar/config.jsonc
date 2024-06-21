@@ -22,6 +22,8 @@
     // "mpd",
     "pulseaudio",
     "custom/separator",
+    "custom/notifications",
+    "custom/separator",
     "network",
     "custom/separator",
     // "power-profiles-daemon",
@@ -89,6 +91,13 @@
     },
     "tooltip-format": "MPD (connected)",
     "tooltip-format-disconnected": "MPD (disconnected)"
+},
+"custom/notifications": {
+    "format": "{}",
+    "exec": "python3 ~/.config/waybar/dunst_is_paused_emoji.py",
+    "on-click": "dunstctl set-paused toggle",
+    "restart-interval": 1,
+    "tooltip": false,
 },
 "custom/emoji_time": {
     "format": "{}",
@@ -165,17 +174,17 @@
     // "scroll-step": 1, // %, can be a float
     "format": "{icon}  {volume}% {format_source}",
     "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-bluetooth-muted": "  {icon} {format_source}",
     "format-muted": " {format_source}",
     //"format-source": "{volume}% ",
     "format-source-muted": "",
     "format-icons": {
-        "headphone": "",
-        "hands-free": "",
-        "headset": "",
-        "phone": "",
-        "portable": "",
-        "car": "",
+        "headphone": " ",
+        "hands-free": "󱡏 ",
+        "headset": "󰋎 ",
+        "phone": " ",
+        "portable": " ",
+        "car": " ",
         "default": ["", "", "", "", "", "", "", "", "", ""]
     },
     "on-click": "pavucontrol"
