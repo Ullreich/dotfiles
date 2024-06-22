@@ -267,7 +267,8 @@ bindsym Mod4+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 
-# TODO: config bar
+# Toggle bar
+bindsym Mod4+Ctrl+t exec python3 ~/.config/sway/scripts/toggle_bar.py 
 
 bar {
 	tray_output none
